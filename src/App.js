@@ -22,7 +22,7 @@ function App() {
       return true
     } else {
       return false
-    }
+    } 
   })
 
   const seachBtn = () => {
@@ -52,7 +52,7 @@ function App() {
 
               }}>Главная</Nav.Link>
               <Nav.Link href="#action2" onClick={() => {
-                
+
                 setDisc(true)
                 setActive(null)
 
@@ -86,7 +86,7 @@ function App() {
 
       {!active ? null : <h4>{active.title}</h4>}
       {disc === true ? <h4>Скидки</h4> : ''}
-      {!market ? null : <h4>Результаты поиска {s.length === 0 ? 'не найден' : s.length}</h4> }
+      {!market ? null : <h4>Результаты поиска {s.length === 0 ? 'не найден' : s.length}</h4>}
 
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {s.map(g => {
